@@ -1,0 +1,13 @@
+{% extends 'upload/header.html' %}
+
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    
+    <p><i> Please upload the file for analysis: </i></p>
+    {{ form.as_p }}
+    <button type="submit">Calculate Deleteriousness Score!</button>
+</form>
+
+{% endblock %}
