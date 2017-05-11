@@ -1,0 +1,36 @@
+{% extends "upload/header.html" %}
+
+{% load static %}
+
+{% block content %}
+<style type="text/css">
+    div.pos_abs1
+    {
+        position:absolute;
+        left:100px;
+
+    }
+    div.pos_abs2
+    {
+        position:relative;
+        left:200px;
+        top:-186px
+    }
+</style>
+    <h5>Centrality Results: </h5>
+    <div class="pbs_abs1">
+    <h5><i>1. Proteins with SNPs             </i></h5><a href="/upload/snp_results">
+        <img src="{% static "personal/img/file_icon2.png" %}" width="150" height="150"/>
+    </a>
+    </div>
+    <div class="pos_abs2">
+    <h5><i>2. Proteins without SNPs             </i></h5><a href="/upload/nonsnp_results">
+        <img src="{% static "personal/img/file_icon2.png" %}" width="150" height="150"/>
+    </a>
+    </div>
+
+
+{% endblock %}
+
+
+
