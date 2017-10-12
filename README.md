@@ -1,3 +1,3 @@
 # django_demo
 
-### This website is an online website which provides computation service.
+### This website is an online platform which provides computation service (mainly focused on network computation and risk estimation).
